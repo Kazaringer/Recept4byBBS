@@ -1,0 +1,951 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.3.1.final using JasperReports Library version 6.3.1  -->
+<!-- 2017-05-17T01:09:56 -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="Blank_A4_1" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="ed92cb9d-1040-4405-a3ca-8c31bfdf9d1b">
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="One Empty Record"/>
+	<queryString>
+		<![CDATA[]]>
+	</queryString>
+	<field name="firm" class="java.lang.String"/>
+	<field name="boss" class="java.lang.String"/>
+	<field name="recept" class="java.lang.String"/>
+	<field name="raw" class="java.lang.String"/>
+	<field name="brutto" class="java.lang.String"/>
+	<field name="netto" class="java.lang.String"/>
+	<field name="exit" class="java.lang.String"/>
+	<field name="indicatorfloat" class="java.lang.String"/>
+	<field name="proteins" class="java.lang.String"/>
+	<field name="fats" class="java.lang.String"/>
+	<field name="carbogydrates" class="java.lang.String"/>
+	<field name="energy" class="java.lang.String"/>
+	<field name="cal" class="java.lang.String"/>
+	<field name="developer" class="java.lang.String"/>
+	<field name="number" class="java.lang.String"/>
+	<field name="acidityint" class="java.lang.String"/>
+	<field name="starchint" class="java.lang.String"/>
+	<field name="saccharidesint" class="java.lang.String"/>
+	<field name="acidint" class="java.lang.String"/>
+	<field name="ashint" class="java.lang.String"/>
+	<field name="celluloseint" class="java.lang.String"/>
+	<field name="cholesterolint" class="java.lang.String"/>
+	<field name="proteinint" class="java.lang.String"/>
+	<field name="MineralKint" class="java.lang.String"/>
+	<field name="MineralCAint" class="java.lang.String"/>
+	<field name="MineralMGint" class="java.lang.String"/>
+	<field name="MineralNAint" class="java.lang.String"/>
+	<field name="MineralFEint" class="java.lang.String"/>
+	<field name="vitaminAint" class="java.lang.String"/>
+	<field name="VitaminBint" class="java.lang.String"/>
+	<field name="VitaminB1int" class="java.lang.String"/>
+	<field name="VitaminB2int" class="java.lang.String"/>
+	<field name="VitaminCint" class="java.lang.String"/>
+	<field name="VitaminPPint" class="java.lang.String"/>
+	<field name="MineralPint" class="java.lang.String"/>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="380" splitType="Stretch">
+			<staticText>
+				<reportElement x="470" y="0" width="85" height="20" uuid="e81a02da-0033-4b5e-a941-1f9f7403df0b"/>
+				<textElement verticalAlignment="Bottom" rotation="None">
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[УТВЕРЖДАЮ:]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="380" y="20" width="175" height="20" uuid="f6829557-51d2-433f-9d12-91d913725e36"/>
+				<textElement textAlignment="Right" verticalAlignment="Bottom">
+					<font size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{firm}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="380" y="40" width="175" height="20" uuid="c892902a-06f0-4cf7-bcfc-f9af163e331e"/>
+				<textElement textAlignment="Right" verticalAlignment="Bottom">
+					<font size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{boss}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="360" y="60" width="195" height="21" uuid="76b0c5da-d08d-41e8-8c7d-7b9465bb150d"/>
+				<textElement verticalAlignment="Bottom">
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA["___" _________________ 20___г.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="450" y="80" width="105" height="21" uuid="8f827a73-796a-4812-b2cc-8d417148a57e"/>
+				<textElement verticalAlignment="Bottom">
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[_______________]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="0" width="100" height="20" uuid="aeae98fa-0f13-452a-a0be-1d157b17aab0"/>
+				<textElement verticalAlignment="Bottom" rotation="None">
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[СОГЛАСОВАНО:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="20" width="100" height="20" uuid="8049094d-1ca4-4d1e-ab72-5f77b02658b8"/>
+				<textElement verticalAlignment="Bottom" rotation="None">
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[Роспотребнадзор]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="40" width="140" height="20" uuid="5dc15084-d1e1-4db1-97d6-0be71c911cb9"/>
+				<textElement verticalAlignment="Bottom" rotation="None">
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[по республике Карелия]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="60" width="180" height="20" uuid="20327401-eba7-44fb-97ff-6ae028af4c27"/>
+				<textElement verticalAlignment="Bottom" rotation="None">
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[__________________________]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="80" width="180" height="20" uuid="3eeb0188-d6a6-4d6c-b355-e6fb2c1975ba"/>
+				<textElement verticalAlignment="Bottom" rotation="None">
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[_______________]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="100" y="120" width="333" height="30" uuid="74a4f4e7-3065-4c47-a5f4-483692a749e6"/>
+				<textElement verticalAlignment="Bottom">
+					<font size="16" isBold="true"/>
+				</textElement>
+				<text><![CDATA[ТЕХНИКО-ТЕХНОЛОГИЧЕСКАЯ КАРТА №]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="433" y="120" width="33" height="30" uuid="29b65150-05d8-4057-bbd7-79c3c50b5373"/>
+				<textElement verticalAlignment="Bottom">
+					<font size="16" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{number}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="199" y="150" width="20" height="20" uuid="5df6fccd-21fe-4a2e-afdb-aeb4d7438ccc"/>
+				<textElement verticalAlignment="Bottom">
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[на]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="219" y="150" width="170" height="20" uuid="da9a19ce-5bbd-4041-baf2-52cbc6100704"/>
+				<textElement verticalAlignment="Bottom">
+					<font size="14" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{firm}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="192" y="170" width="170" height="30" uuid="74815aa2-a77b-4da0-aa91-633c9280c741"/>
+				<textElement verticalAlignment="Bottom">
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[1. Область применения]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="200" width="450" height="20" uuid="a3da796b-42ee-491e-adb1-4d788abc5292"/>
+				<textElement verticalAlignment="Bottom" rotation="None">
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[1.1. Настоящая технико-технологическая карта распространяется на изделие]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="450" y="200" width="100" height="20" uuid="4064aae0-6316-42f5-a48d-cc4bab94ab3c"/>
+				<textElement verticalAlignment="Bottom">
+					<font size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{recept} + ","]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="0" y="220" width="100" height="20" uuid="300469ef-5bf8-42fa-8f22-70e66632a889"/>
+				<textElement verticalAlignment="Bottom" rotation="None">
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[вырабатываемое]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="100" y="220" width="150" height="21" uuid="250e867d-58a2-46e9-9960-58de7dd688dd">
+					<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+				</reportElement>
+				<textElement verticalAlignment="Bottom">
+					<font size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{firm}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="208" y="240" width="138" height="30" uuid="696c27f9-6f9b-4c21-851d-fe310ad5a9c9"/>
+				<textElement verticalAlignment="Bottom">
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[2. Перечень сырья]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="270" width="260" height="20" uuid="942a9241-19fd-4772-9746-29c375ea3bb1"/>
+				<textElement verticalAlignment="Bottom" rotation="None">
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[2.1. Сырье, используемое для приготовления]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="260" y="270" width="100" height="20" uuid="3a206df7-a579-4643-bca6-152d3941ab70"/>
+				<textElement textAlignment="Right" verticalAlignment="Bottom" rotation="None">
+					<font size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{recept}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="360" y="270" width="195" height="20" uuid="879e2e1f-bdc4-4d20-a1fd-0f1c5008a14b"/>
+				<textElement verticalAlignment="Bottom" rotation="None">
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[, должно соответствовать]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="290" width="437" height="20" uuid="6356ff60-44ce-4953-9795-e852158d9d75"/>
+				<textElement verticalAlignment="Bottom" rotation="None">
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[нормативной документации, иметь сертификаты и удостоверения качества.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="221" y="310" width="100" height="30" uuid="043d3214-99c9-4861-8b92-982439c3edfa"/>
+				<textElement verticalAlignment="Bottom">
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[3. Рецептура]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="340" width="110" height="20" uuid="fbbff6b5-dca2-4a72-a240-592c4373e28d"/>
+				<textElement verticalAlignment="Bottom" rotation="None">
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[Рецептура изделия]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="110" y="340" width="100" height="20" uuid="44444619-c906-4f2e-b57b-a2ab28077cc2"/>
+				<textElement verticalAlignment="Bottom">
+					<font size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{recept}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="0" y="360" width="180" height="20" uuid="4dd9bcf7-8a54-4dd3-b0e5-5ffb0021dd2c"/>
+				<box topPadding="0" leftPadding="0" bottomPadding="0" rightPadding="0">
+					<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Bottom" rotation="None">
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[Наименование сырья]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="180" y="360" width="200" height="20" uuid="b5872f1b-62d9-4189-a958-10de9a9710f1"/>
+				<box topPadding="0" leftPadding="0" bottomPadding="0" rightPadding="0">
+					<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Bottom" rotation="None">
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[Масса брутто, г]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="380" y="360" width="175" height="20" uuid="a9bed02e-8568-4329-935e-7d0c4c87051c"/>
+				<box topPadding="0" leftPadding="0" bottomPadding="0" rightPadding="0">
+					<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Bottom" rotation="None">
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[Масса нетто, г]]></text>
+			</staticText>
+		</band>
+	</title>
+	<detail>
+		<band height="21" splitType="Stretch">
+			<textField>
+				<reportElement x="0" y="0" width="180" height="21" uuid="710f2d99-b997-43a0-9df8-d24c934cce19">
+					<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+				</reportElement>
+				<box>
+					<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement verticalAlignment="Bottom">
+					<font size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{raw}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="180" y="0" width="200" height="21" uuid="304cb8a1-b350-4c43-9d07-eb39a5462c78">
+					<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+				</reportElement>
+				<box>
+					<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement verticalAlignment="Bottom">
+					<font size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{brutto}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="380" y="0" width="175" height="21" uuid="02bb6643-9a75-44c0-8694-e1c50d4aad8a">
+					<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+				</reportElement>
+				<box>
+					<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement verticalAlignment="Bottom">
+					<font size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{netto}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<summary>
+		<band height="712">
+			<staticText>
+				<reportElement x="0" y="0" width="180" height="20" uuid="154a1374-6d1e-421d-99bf-67b3329d5267"/>
+				<box topPadding="0" leftPadding="0" bottomPadding="0" rightPadding="0">
+					<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Left" verticalAlignment="Bottom" rotation="None">
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[Итого]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="20" width="180" height="20" uuid="bbc43cdd-c480-4be3-89f2-23e154f8ddd9"/>
+				<box topPadding="0" leftPadding="0" bottomPadding="0" rightPadding="0">
+					<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Left" verticalAlignment="Bottom" rotation="None">
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[Выход]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="180" y="20" width="200" height="20" uuid="929c4701-3d43-4d63-b4e7-3727c09edc55"/>
+				<box topPadding="0" leftPadding="0" bottomPadding="0" rightPadding="0">
+					<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Left" verticalAlignment="Bottom" rotation="None">
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="380" y="20" width="175" height="20" uuid="8c9a6867-c1c7-4088-9ec8-bab207420d52"/>
+				<box>
+					<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement verticalAlignment="Bottom">
+					<font size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{exit}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="380" y="0" width="175" height="20" uuid="c730d861-32ec-45c5-9579-2cb91ce9f3c6"/>
+				<box>
+					<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement verticalAlignment="Bottom">
+					<font size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{netto}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="180" y="0" width="200" height="20" uuid="ede6d20c-c2c3-41fe-b569-8f311a449ac5"/>
+				<box>
+					<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement verticalAlignment="Bottom">
+					<font size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{brutto}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="0" y="690" width="170" height="21" uuid="dc0d45ac-cde2-4f52-b2c5-b1f02ca139f1"/>
+				<textElement verticalAlignment="Bottom">
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[Ответственный разработчик:]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="170" y="690" width="113" height="21" uuid="73c36bed-90e6-4859-a81d-30fc09db6a1d">
+					<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+				</reportElement>
+				<textElement verticalAlignment="Bottom">
+					<font size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{firm}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="283" y="690" width="85" height="21" uuid="458271cf-554b-44f7-9a95-773b224e4cff"/>
+				<textElement verticalAlignment="Bottom">
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[___________]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="368" y="690" width="80" height="21" uuid="14cb212c-430d-415a-ae5b-5f317f815930">
+					<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+				</reportElement>
+				<textElement verticalAlignment="Bottom">
+					<font size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{developer}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="140" y="610" width="280" height="30" uuid="b25876b8-78ce-46ab-a695-ba3d693dddb1"/>
+				<textElement verticalAlignment="Bottom">
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[6. Пищевая и энергетическая ценность]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="638" width="90" height="20" uuid="ed356bcd-5d10-47f3-ba97-558ce6677b79"/>
+				<box topPadding="0" leftPadding="0" bottomPadding="0" rightPadding="0">
+					<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Bottom" rotation="None">
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[Белки]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="90" y="638" width="112" height="20" uuid="5bf8b48a-4839-48f9-bf18-9ca8593914d6">
+					<property name="com.jaspersoft.studio.unit.x" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.y" value="pixel"/>
+				</reportElement>
+				<box topPadding="0" leftPadding="0" bottomPadding="0" rightPadding="0">
+					<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Bottom" rotation="None">
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[Жиры]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="202" y="638" width="138" height="20" uuid="e3cb9477-c5d5-45da-9d03-be79e61468d3"/>
+				<box topPadding="0" leftPadding="0" bottomPadding="0" rightPadding="0">
+					<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Bottom" rotation="None">
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[Углеводы]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="340" y="638" width="215" height="20" uuid="2a39502e-b154-44ef-8466-7371d4c62ea1"/>
+				<box topPadding="0" leftPadding="0" bottomPadding="0" rightPadding="0">
+					<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Bottom" rotation="None">
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[Энергетическая ценность, ккал/кДж]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="0" y="658" width="90" height="20" uuid="bb21f2f5-4e6b-4033-8995-d8c03df9a33a"/>
+				<box>
+					<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement verticalAlignment="Bottom">
+					<font size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{proteins}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="90" y="658" width="112" height="20" uuid="39f123db-d509-43b8-928a-d197c09a0ab6"/>
+				<box>
+					<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement verticalAlignment="Bottom">
+					<font size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{fats}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="202" y="658" width="138" height="20" uuid="5274a0c0-e5f4-4e44-966a-e7d5a0837a81"/>
+				<box>
+					<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement verticalAlignment="Bottom">
+					<font size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{carbogydrates}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="340" y="658" width="215" height="20" uuid="f12dc72d-19d7-44a0-a623-f57af1e10e64"/>
+				<box>
+					<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement verticalAlignment="Bottom">
+					<font size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{cal} + "/" + $F{energy}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="102" y="170" width="108" height="20" uuid="a1119b84-d6ea-47eb-8c4b-c0f3bc026894"/>
+				<textElement verticalAlignment="Bottom">
+					<font size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{indicatorfloat} + "%"]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="2" y="150" width="208" height="20" uuid="91801265-6061-484f-a49b-6a957d476c24"/>
+				<textElement verticalAlignment="Bottom" rotation="None">
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[5.1. Физико-химические показатели:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="137" y="120" width="280" height="30" uuid="827bc5a3-e173-484b-9efc-939bb925f986"/>
+				<textElement verticalAlignment="Bottom">
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[5. Показатели качества и безопасности]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="180" y="40" width="200" height="30" uuid="26fb4100-3b04-4ed1-b9ed-fa175c9c5b4f"/>
+				<textElement verticalAlignment="Bottom">
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[4. Технологический процесс]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="70" width="270" height="20" uuid="a44b39ab-5e4c-4383-ac9f-e1aeb39dce6a"/>
+				<textElement verticalAlignment="Bottom" rotation="None">
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[4.1. Подготовка сырья к производству изделия]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="270" y="70" width="100" height="20" uuid="273db84e-1914-434f-b3a0-8fff4267c54b"/>
+				<textElement verticalAlignment="Bottom">
+					<font size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{recept}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="370" y="70" width="185" height="20" uuid="701ca100-b79b-4fc7-902b-0198e12190da"/>
+				<textElement verticalAlignment="Bottom" rotation="None">
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[производится в соответствии со]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="90" width="555" height="20" uuid="db4cec81-986e-43c1-a1e7-f6e69367cad3"/>
+				<textElement verticalAlignment="Bottom" rotation="None">
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA["Сборником рецептур блюд и кулинарных изделий для предприятий общественного питания"]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="110" width="50" height="20" uuid="af5945be-f2f2-429c-83de-7db46b5f2d52"/>
+				<textElement verticalAlignment="Bottom" rotation="None">
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[(1996 г.).]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="102" y="190" width="108" height="20" uuid="b8303176-bb08-41c1-bb95-922d158f890e"/>
+				<textElement verticalAlignment="Bottom">
+					<font size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{acidityint} + "%"]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="102" y="210" width="108" height="20" uuid="894e654b-ccbf-4ab3-b79c-5150bda09e3f"/>
+				<textElement verticalAlignment="Bottom">
+					<font size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{starchint} + "%"]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="121" y="230" width="108" height="20" uuid="ad7e7606-5e14-4bb2-9689-d84c958ad994"/>
+				<textElement verticalAlignment="Bottom">
+					<font size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{saccharidesint} + "%"]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="102" y="250" width="108" height="20" uuid="911df846-dcdb-4a27-a24b-6430d398475b"/>
+				<textElement verticalAlignment="Bottom">
+					<font size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{acidint} + "%"]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="102" y="270" width="108" height="20" uuid="212ce3a8-0592-4045-94cb-669925f62023"/>
+				<textElement verticalAlignment="Bottom">
+					<font size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{ashint} + "%"]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="102" y="290" width="108" height="20" uuid="af3bda26-8964-459b-84d4-842c954e563b"/>
+				<textElement verticalAlignment="Bottom">
+					<font size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{celluloseint} + "%"]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="102" y="310" width="108" height="20" uuid="cf759205-c0cb-425a-959a-928f8db5b13c"/>
+				<textElement verticalAlignment="Bottom">
+					<font size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{cholesterolint} + "%"]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="102" y="330" width="108" height="20" uuid="8d0cad4b-c6d4-4f20-a4b2-b1a0a23dac88"/>
+				<textElement verticalAlignment="Bottom">
+					<font size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{proteinint} + "%"]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="102" y="350" width="108" height="20" uuid="6198478b-4998-4edd-9ffb-e5f4c346c8a7"/>
+				<textElement verticalAlignment="Bottom">
+					<font size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{MineralKint} + "%"]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="102" y="370" width="108" height="20" uuid="9b20f0b3-a6c9-4c97-8d8e-0300a6d084cb"/>
+				<textElement verticalAlignment="Bottom">
+					<font size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{MineralCAint} + "%"]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="102" y="390" width="108" height="20" uuid="cc260c04-7cf4-4c4c-ad73-60d053f7c7b6"/>
+				<textElement verticalAlignment="Bottom">
+					<font size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{MineralMGint} + "%"]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="102" y="410" width="108" height="20" uuid="d81549f7-97de-43a3-96f7-fcc2c0ab8ae6"/>
+				<textElement verticalAlignment="Bottom">
+					<font size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{MineralNAint} + "%"]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="102" y="430" width="108" height="20" uuid="71b55655-9e4f-472e-8221-05d11d780a49"/>
+				<textElement verticalAlignment="Bottom">
+					<font size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{MineralPint} + "%"]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="102" y="470" width="108" height="20" uuid="167dc2f1-f6a8-4764-b8e0-02610cb36709"/>
+				<textElement verticalAlignment="Bottom">
+					<font size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{vitaminAint} + "%"]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="102" y="490" width="108" height="20" uuid="1d341e29-f22c-4035-9182-b1d0340ef7e9"/>
+				<textElement verticalAlignment="Bottom">
+					<font size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{VitaminBint} + "%"]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="102" y="510" width="108" height="20" uuid="6e060c59-8d95-4b80-bcb6-e8104f9e6568"/>
+				<textElement verticalAlignment="Bottom">
+					<font size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{VitaminB1int} + "%"]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="110" y="530" width="108" height="20" uuid="b745c8b6-18e9-49b8-906b-1e39c5b19949"/>
+				<textElement verticalAlignment="Bottom">
+					<font size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{VitaminB2int} + "%"]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="161" y="550" width="108" height="20" uuid="924ffc5d-848f-4524-930e-2ad145196fa1"/>
+				<textElement verticalAlignment="Bottom">
+					<font size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{VitaminCint} + "%"]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="102" y="570" width="108" height="20" uuid="7270b680-d422-4844-a32f-6c791a291738"/>
+				<textElement verticalAlignment="Bottom">
+					<font size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{VitaminPPint} + "%"]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="102" y="450" width="108" height="20" uuid="b277817e-f5ec-4bb1-af99-4486ec44fe10"/>
+				<textElement verticalAlignment="Bottom">
+					<font size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{MineralFEint} + "%"]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="2" y="170" width="100" height="20" uuid="0c872dda-12a7-48ed-acd1-e5370b8dbd57">
+					<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+				</reportElement>
+				<textElement verticalAlignment="Bottom" rotation="None">
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[Влажность:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="2" y="190" width="100" height="20" uuid="8e7c871d-6b33-42ba-882d-15863dec430a">
+					<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+				</reportElement>
+				<textElement verticalAlignment="Bottom">
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[Кислотность:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="2" y="210" width="100" height="20" uuid="3d51b0bf-cc69-489b-ab7a-3090a1c70c81">
+					<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+				</reportElement>
+				<textElement verticalAlignment="Bottom">
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[Крахмал:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="2" y="230" width="119" height="20" uuid="12d2dd55-d68d-457d-983b-a597c345b72b">
+					<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+				</reportElement>
+				<textElement verticalAlignment="Bottom">
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[Моно и дисахариды:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="2" y="250" width="100" height="20" uuid="bda5c4ee-8e8b-4fe7-b379-4f1daba994a7">
+					<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+				</reportElement>
+				<textElement verticalAlignment="Bottom">
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[Жирные кислоты:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="2" y="270" width="100" height="20" uuid="649844db-f881-41eb-ad2f-bd56e297abc7">
+					<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+				</reportElement>
+				<textElement verticalAlignment="Bottom">
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[Зола:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="2" y="290" width="100" height="20" uuid="f7252473-5ab2-41c7-abf6-0e97786272d9">
+					<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+				</reportElement>
+				<textElement verticalAlignment="Bottom">
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[Целлюлоза:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="2" y="310" width="100" height="20" uuid="db7471ee-52ca-45a9-9474-8b7e00b49690">
+					<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+				</reportElement>
+				<textElement verticalAlignment="Bottom">
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[Холестерин:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="2" y="330" width="100" height="20" uuid="ece93cd9-600a-4c08-ae9a-06e2e0b5937c">
+					<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+				</reportElement>
+				<textElement verticalAlignment="Bottom">
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[Протеины:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="2" y="350" width="100" height="20" uuid="2e789c98-7014-4616-b713-9bcce594096c">
+					<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+				</reportElement>
+				<textElement verticalAlignment="Bottom">
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[Калий (K):]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="2" y="370" width="100" height="20" uuid="092d0a31-a482-4ae1-9b66-6fecba9030f6">
+					<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+				</reportElement>
+				<textElement verticalAlignment="Bottom">
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[Кальций (Ca):]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="2" y="390" width="100" height="20" uuid="62ccdafa-2a90-4651-8e8b-bbc17fee11b3">
+					<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+				</reportElement>
+				<textElement verticalAlignment="Bottom">
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[Магний (Mg):]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="2" y="410" width="100" height="20" uuid="3f39d8ae-228e-44ba-bb22-d02aecaf35f3">
+					<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+				</reportElement>
+				<textElement verticalAlignment="Bottom">
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[Натрий (Na):]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="2" y="430" width="100" height="20" uuid="db08ff67-7e6e-4e1d-893e-1a35ee403e1f">
+					<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+				</reportElement>
+				<textElement verticalAlignment="Bottom">
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[Фосфор (P):]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="2" y="450" width="100" height="20" uuid="8dcae095-7834-4b00-aeb4-6c7c844c3ab1">
+					<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+				</reportElement>
+				<textElement verticalAlignment="Bottom">
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[Железо (Fe):]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="2" y="470" width="100" height="20" uuid="d25f7392-9e2c-4e82-9dd4-b601006a3e24">
+					<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+				</reportElement>
+				<textElement verticalAlignment="Bottom">
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[Ретинол (А):]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="2" y="490" width="100" height="20" uuid="8e0bbf5e-fade-4a1a-a77d-01542a383155">
+					<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+				</reportElement>
+				<textElement verticalAlignment="Bottom">
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[Бета-каротин (B):]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="2" y="510" width="100" height="20" uuid="74d87668-30fc-415d-898a-1aada103696c">
+					<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+				</reportElement>
+				<textElement verticalAlignment="Bottom">
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[Тиамин (B1):]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="2" y="530" width="108" height="20" uuid="236c3b66-9efc-4e19-9234-5edad9df4ab4">
+					<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+				</reportElement>
+				<textElement verticalAlignment="Bottom">
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[Рибофлавин (B2):]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="2" y="550" width="159" height="20" uuid="72e1cfa3-887c-4e3f-9102-acefb65f88dd">
+					<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+				</reportElement>
+				<textElement verticalAlignment="Bottom">
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[Аскорбиновая кислота (C):]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="2" y="570" width="100" height="20" uuid="114c7ffe-b0c5-4ca4-9edc-385dd2213f69">
+					<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+				</reportElement>
+				<textElement verticalAlignment="Bottom">
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[Ниацин (PP):]]></text>
+			</staticText>
+		</band>
+	</summary>
+</jasperReport>

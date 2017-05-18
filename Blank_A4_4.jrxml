@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.3.1.final using JasperReports Library version 6.3.1  -->
+<!-- 2017-05-13T22:32:09 -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="Blank_A4_4" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="31f9d713-4ddc-41b1-b3af-f4242becb70d">
+	<queryString>
+		<![CDATA[]]>
+	</queryString>
+	<field name="boss" class="java.lang.String"/>
+	<field name="firm" class="java.lang.String"/>
+	<field name="number" class="java.lang.String"/>
+	<field name="developer" class="java.lang.String"/>
+	<field name="recept" class="java.lang.String"/>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="101" splitType="Stretch">
+			<staticText>
+				<reportElement x="450" y="80" width="105" height="21" uuid="f6764cec-18e1-48d1-aa33-9632fb510388"/>
+				<textElement verticalAlignment="Bottom">
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[_______________]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="360" y="60" width="195" height="21" uuid="c374b004-433d-4103-9ebe-446a651a8d24"/>
+				<textElement verticalAlignment="Bottom">
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA["___" _________________ 20___г.]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="490" y="40" width="65" height="20" uuid="69e4f4c8-6c8c-4469-b463-b3785f0a07ed"/>
+				<textElement verticalAlignment="Bottom">
+					<font size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{boss}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="490" y="20" width="65" height="20" uuid="8786383b-c7b0-4fe7-938c-137f3df56853"/>
+				<textElement verticalAlignment="Bottom">
+					<font size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{firm}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="470" y="0" width="85" height="20" uuid="9acdcb71-c714-4588-867f-2377150b207f"/>
+				<textElement verticalAlignment="Bottom" rotation="None">
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[УТВЕРЖДАЮ:]]></text>
+			</staticText>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="14" splitType="Stretch"/>
+	</pageHeader>
+	<columnHeader>
+		<band height="33" splitType="Stretch">
+			<staticText>
+				<reportElement x="80" y="2" width="400" height="30" uuid="3057b3c6-fa58-47c7-93f4-b58ab864b3ca"/>
+				<textElement>
+					<font size="16" isBold="true"/>
+				</textElement>
+				<text><![CDATA[ПЕРЕЧЕНЬ ТЕХНИКО-ТЕХНОЛОГИЧЕСКИХ КАРТ]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="31" splitType="Stretch">
+			<textField>
+				<reportElement x="30" y="0" width="100" height="30" uuid="7c521a2c-4d79-4abc-a821-ccb6fa7ca4f2"/>
+				<textElement verticalAlignment="Bottom">
+					<font size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{recept}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="0" y="0" width="30" height="30" uuid="0b96b687-ebd5-4234-87e5-efb9828b916c"/>
+				<textElement verticalAlignment="Bottom">
+					<font size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{number}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="21" splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="10" splitType="Stretch"/>
+	</pageFooter>
+	<summary>
+		<band height="42" splitType="Stretch">
+			<staticText>
+				<reportElement x="0" y="20" width="170" height="21" uuid="4b7b9e78-7561-48e0-83d3-d31888bb4e2c"/>
+				<textElement verticalAlignment="Bottom">
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[Ответственный разработчик:]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="170" y="20" width="65" height="21" uuid="eaa8bc11-43f4-4a90-9acf-146089809e6c">
+					<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+				</reportElement>
+				<textElement verticalAlignment="Bottom">
+					<font size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{firm}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="235" y="20" width="85" height="21" uuid="6f043c0c-88a4-4424-80cf-17dba27d4258"/>
+				<textElement verticalAlignment="Bottom">
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[___________]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="320" y="20" width="80" height="21" uuid="99f66291-b03b-48ba-8f60-f36b3410eaec">
+					<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+				</reportElement>
+				<textElement verticalAlignment="Bottom">
+					<font size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{developer}]]></textFieldExpression>
+			</textField>
+		</band>
+	</summary>
+</jasperReport>
