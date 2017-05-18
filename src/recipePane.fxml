@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="RecipeController">
+   <center>
+      <AnchorPane prefHeight="400.0" prefWidth="600.0">
+         <children>
+            <AnchorPane layoutX="13.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <children>
+                  <Label alignment="CENTER" layoutX="238.0" prefHeight="39.0" prefWidth="171.0" text="Рецептура" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+                     <font>
+                        <Font name="Tahoma" size="24.0" />
+                     </font>
+                  </Label>
+                  <AnchorPane layoutY="45.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0">
+                     <children>
+                        <Label layoutX="4.0" prefHeight="13.0" prefWidth="57.0" text="Название">
+                           <font>
+                              <Font name="Microsoft Sans Serif" size="11.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="4.0" layoutY="26.0" prefHeight="13.0" prefWidth="129.0" text="Нормативный документ">
+                           <font>
+                              <Font name="Microsoft Sans Serif" size="11.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="4.0" layoutY="52.0" prefHeight="13.0" prefWidth="95.0" text="Источник данных">
+                           <font>
+                              <Font name="Microsoft Sans Serif" size="11.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="4.0" layoutY="78.0" prefHeight="13.0" prefWidth="185.0" text="Норма потерь холодной обработки">
+                           <font>
+                              <Font name="Microsoft Sans Serif" size="11.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="4.0" layoutY="105.0" prefHeight="13.0" prefWidth="72.0" text="Кислотность">
+                           <font>
+                              <Font name="Microsoft Sans Serif" size="11.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane layoutX="374.0" layoutY="42.0" AnchorPane.bottomAnchor="0.0" AnchorPane.rightAnchor="0.0">
+                     <children>
+                        <AnchorPane>
+                           <children>
+                              <Label layoutY="3.0" prefHeight="13.0" prefWidth="41.0" text="Номер">
+                                 <font>
+                                    <Font size="11.0" />
+                                 </font>
+                              </Label>
+                              <RadioButton fx:id="wetness" layoutY="26.0" mnemonicParsing="false" prefHeight="24.0" prefWidth="83.0" selected="true" text="Влажность">
+                                 <font>
+                                    <Font name="Microsoft Sans Serif" size="11.0" />
+                                 </font>
+                                 <toggleGroup>
+                                    <ToggleGroup fx:id="group1" />
+                                 </toggleGroup>
+                              </RadioButton>
+                              <RadioButton fx:id="output" layoutY="61.0" mnemonicParsing="false" prefHeight="24.0" prefWidth="83.0" text="Выход" toggleGroup="$group1">
+                                 <font>
+                                    <Font name="Microsoft Sans Serif" size="11.0" />
+                                 </font>
+                              </RadioButton>
+                              <TextField fx:id="number" layoutX="83.0" onKeyReleased="#numberRecount" prefHeight="20.0" prefWidth="46.0">
+                                 <font>
+                                    <Font size="11.0" />
+                                 </font>
+                              </TextField>
+                              <TextField fx:id="wetnessPercent" layoutX="83.0" layoutY="26.0" onKeyReleased="#wetnessRecount" prefHeight="20.0" prefWidth="75.0" />
+                              <TextField fx:id="outputMass" layoutX="83.0" layoutY="57.0" onKeyReleased="#outputRecount" prefHeight="20.0" prefWidth="75.0" />
+                              <Label layoutX="167.0" layoutY="29.0" prefHeight="13.0" prefWidth="15.0" text="\%">
+                                 <font>
+                                    <Font name="Microsoft Sans Serif" size="12.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="170.0" layoutY="65.0" prefHeight="13.0" prefWidth="12.0" text="г" />
+                           </children>
+                        </AnchorPane>
+                        <RadioButton layoutY="100.0" mnemonicParsing="false" prefHeight="17.0" prefWidth="158.0" text="Определить норму воды" />
+                        <Label layoutX="191.0" layoutY="31.0" prefHeight="13.0" prefWidth="13.0" text="+">
+                           <font>
+                              <Font name="Microsoft Sans Serif" size="12.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="246.0" layoutY="30.0" prefHeight="13.0" prefWidth="13.0" text="-" />
+                        <Label layoutX="264.0" layoutY="65.0" text="шт" />
+                        <TextField fx:id="plus" layoutX="210.0" layoutY="26.0" onKeyReleased="#plusRecount" prefHeight="20.0" prefWidth="23.0" />
+                        <TextField fx:id="minus" layoutX="260.0" layoutY="26.0" onKeyReleased="#minusRecount" prefHeight="20.0" prefWidth="23.0" />
+                        <TextField fx:id="quantity" layoutX="191.0" layoutY="57.0" onKeyReleased="#quantityRecount" prefHeight="20.0" prefWidth="61.0" />
+                        <ComboBox layoutX="167.0" layoutY="96.0" prefHeight="21.0" prefWidth="133.0" />
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane layoutX="192.0" layoutY="37.0" AnchorPane.leftAnchor="192.0" AnchorPane.rightAnchor="336.0">
+                     <children>
+                        <TextField fx:id="recipeName" onKeyReleased="#recipeRename" prefHeight="22.0" prefWidth="166.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+                           <font>
+                              <Font name="Microsoft Sans Serif" size="11.0" />
+                           </font>
+                        </TextField>
+                        <TextField fx:id="normDoc" layoutY="26.0" onKeyReleased="#normDocRename" prefHeight="22.0" prefWidth="166.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+                           <font>
+                              <Font name="Microsoft Sans Serif" size="11.0" />
+                           </font>
+                        </TextField>
+                        <TextField fx:id="dataSource" layoutY="52.0" onKeyReleased="#dataSourceRename" prefHeight="25.0" prefWidth="165.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" />
+                        <ComboBox fx:id="lossBox" layoutY="78.0" onAction="#coldLossChange" prefHeight="21.0" prefWidth="164.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" />
+                        <TextField fx:id="acidity" layoutY="105.0" onKeyReleased="#acidityRecount" prefHeight="20.0" prefWidth="50.0" AnchorPane.leftAnchor="0.0">
+                           <font>
+                              <Font name="Microsoft Sans Serif" size="11.0" />
+                           </font>
+                        </TextField>
+                     </children>
+                  </AnchorPane>
+               </children>
+            </AnchorPane>
+            <Label layoutX="3.0" layoutY="178.0" prefHeight="13.0" prefWidth="157.0" text="Краткое описание рецептуры">
+               <font>
+                  <Font size="11.0" />
+               </font>
+            </Label>
+            <TextField fx:id="recipeDescription" alignment="TOP_LEFT" layoutY="194.0" onKeyReleased="#rewriteDescription" prefHeight="83.0" prefWidth="694.0" text="Краткое описание рецептуры" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+               <font>
+                  <Font size="11.0" />
+               </font>
+            </TextField>
+            <TableView fx:id="tableView" layoutY="283.0" prefHeight="223.0" prefWidth="694.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="283.0">
+              <columns>
+                <TableColumn minWidth="2.0" prefWidth="21.0" />
+                <TableColumn prefWidth="43.0" text="№ п/п" />
+                  <TableColumn fx:id="nameColumn" prefWidth="200.0" text="Наименование сырья" />
+                  <TableColumn fx:id="lossColumn" minWidth="0.0" prefWidth="130.0" text="Потери обработки" />
+                  <TableColumn fx:id="bruttoColumn" prefWidth="100.0" text="Масса брутто, г" />
+                  <TableColumn fx:id="nettoColumn" prefWidth="100.0" text="Масса нетто, г" />
+                  <TableColumn prefWidth="100.0" text="Комментарий" />
+              </columns>
+            </TableView>
+         </children>
+      </AnchorPane>
+   </center>
+</BorderPane>
