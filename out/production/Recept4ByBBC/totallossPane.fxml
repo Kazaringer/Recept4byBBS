@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="666.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1">
+   <left>
+      <ListView prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER" />
+   </left>
+   <center>
+      <AnchorPane prefHeight="575.0" prefWidth="597.0" BorderPane.alignment="CENTER">
+         <children>
+            <AnchorPane layoutX="30.0" layoutY="1.0" prefHeight="29.0" prefWidth="536.0" AnchorPane.topAnchor="0.0">
+               <children>
+                  <Label alignment="CENTER" layoutX="186.0" layoutY="11.0" text="Потери" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                     <font>
+                        <Font name="Tahoma" size="18.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+            <AnchorPane layoutX="23.0" layoutY="45.0" AnchorPane.leftAnchor="23.0">
+               <children>
+                  <Label layoutY="66.0" prefHeight="13.0" prefWidth="55.0" text="Значение">
+                     <font>
+                        <Font name="Microsoft Sans Serif" size="11.0" />
+                     </font>
+                  </Label>
+                  <Label layoutY="99.0" prefHeight="13.0" prefWidth="70.0" text="Примечание">
+                     <font>
+                        <Font size="11.0" />
+                     </font>
+                  </Label>
+                  <Label prefHeight="13.0" prefWidth="41.0" text="Номер">
+                     <font>
+                        <Font name="Microsoft Sans Serif" size="11.0" />
+                     </font>
+                  </Label>
+                  <Label layoutY="33.0" prefHeight="13.0" prefWidth="57.0" text="Название">
+                     <font>
+                        <Font name="Microsoft Sans Serif" size="11.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+            <AnchorPane layoutX="110.0" layoutY="42.0" AnchorPane.leftAnchor="110.0" AnchorPane.rightAnchor="390.0">
+               <children>
+                  <TextField layoutY="66.0" prefHeight="20.0" prefWidth="100.0" />
+                  <TextField layoutY="99.0" prefHeight="20.0" prefWidth="100.0" />
+                  <TextField prefHeight="20.0" prefWidth="100.0" />
+                  <TextField layoutY="33.0" prefHeight="20.0" prefWidth="100.0" />
+               </children>
+            </AnchorPane>
+            <Button layoutX="29.0" layoutY="210.0" mnemonicParsing="false" prefHeight="23.0" prefWidth="75.0" text="Сохранить">
+               <font>
+                  <Font size="11.0" />
+               </font>
+            </Button>
+            <Button layoutX="145.0" layoutY="210.0" mnemonicParsing="false" prefHeight="23.0" prefWidth="75.0" text="Отмена">
+               <font>
+                  <Font name="Microsoft Sans Serif" size="11.0" />
+               </font>
+            </Button>
+         </children></AnchorPane>
+   </center>
+   <top>
+      <AnchorPane prefHeight="0.0" prefWidth="602.0" BorderPane.alignment="CENTER">
+         <children>
+            <GridPane layoutY="10.0" prefHeight="40.0" prefWidth="105.0" AnchorPane.bottomAnchor="18.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="497.0" AnchorPane.topAnchor="0.0">
+              <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="35.0" minWidth="35.0" prefWidth="35.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="35.0" minWidth="35.0" prefWidth="35.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="35.0" minWidth="35.0" prefWidth="35.0" />
+                  <ColumnConstraints />
+                  <ColumnConstraints maxWidth="0.0" minWidth="0.0" prefWidth="0.0" />
+                  <ColumnConstraints maxWidth="0.0" minWidth="0.0" prefWidth="0.0" />
+              </columnConstraints>
+              <rowConstraints>
+                <RowConstraints maxHeight="5.0" minHeight="0.0" prefHeight="0.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="35.0" minHeight="35.0" prefHeight="35.0" />
+              </rowConstraints>
+               <children>
+                   <Button id="add2" alignment="TOP_LEFT" maxHeight="35.0" maxWidth="35.0" minHeight="35.0" minWidth="35.0" mnemonicParsing="false" onAction="#add2" prefHeight="35.0" prefWidth="35.0" stylesheets="@style.css" GridPane.rowIndex="1">
+                   </Button>
+                  <Button id="delete2" maxHeight="35.0" maxWidth="35.0" minHeight="35.0" minWidth="35.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="35.0" stylesheets="@style.css" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                  <Button id="reload" maxHeight="35.0" maxWidth="35.0" minHeight="35.0" minWidth="35.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="35.0" stylesheets="@style.css" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+               </children>
+            </GridPane>
+         </children>
+      </AnchorPane>
+   </top>
+</BorderPane>

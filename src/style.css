@@ -1,0 +1,48 @@
+
+.button{
+    -fx-background-size: cover;
+    -fx-background-color: white;
+   }
+
+#book{
+    -fx-background-image: url("resources/book.jpg");
+}
+#open{
+    -fx-background-image: url("resources/open.png");
+}
+#save{
+    -fx-background-image: url("resources/save.png");
+}
+#add{
+    -fx-background-image: url("resources/add.png");
+}
+#delete{
+    -fx-background-image: url("resources/delete.png");
+}
+#asc{
+    -fx-background-image: url("resources/icon_sort_asc.png");
+}
+#dec{
+    -fx-background-image: url("resources/icon_sort_dec.png");
+}
+#settings{
+    -fx-background-image: url("resources/settings.gif");
+}
+#add2{
+    -fx-background-image: url("resources/add2.png");
+}
+#delete2{
+    -fx-background-image: url("resources/delete2.png");
+}
+#insert{
+    -fx-background-image: url("resources/insert.gif");
+}
+#reload{
+    -fx-background-image: url("resources/reload.png");
+}
+.button:hover {
+    -fx-border-color: #1ac6d9;
+}
+.borderpane{
+-fx-border-color: black;
+}
