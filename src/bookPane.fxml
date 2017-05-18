@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+
+<BorderPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="BookController">
+   <center>
+      <AnchorPane prefHeight="400.0" prefWidth="600.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label layoutX="31.0" layoutY="74.0" prefHeight="13.0" prefWidth="89.0" text="Название книги" AnchorPane.leftAnchor="23.0" />
+            <TextField fx:id="bookName" layoutX="150.0" layoutY="71.0" onKeyReleased="#bookRename" prefHeight="20.0" prefWidth="324.0" AnchorPane.leftAnchor="149.0" AnchorPane.rightAnchor="127.0" />
+            <AnchorPane layoutY="100.0" prefHeight="300.0" prefWidth="600.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="100.0">
+               <children>
+                  <AnchorPane layoutX="228.0" layoutY="40.0" AnchorPane.leftAnchor="228.0" AnchorPane.rightAnchor="140.0">
+                     <children>
+                        <TextField fx:id="postClientName" layoutY="52.0" onKeyReleased="#rePostClientName" prefHeight="20.0" prefWidth="232.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" />
+                        <TextField fx:id="clientName" layoutY="26.0" onKeyReleased="#reClientName" prefHeight="20.0" prefWidth="232.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" />
+                        <TextField fx:id="firmName" onKeyReleased="#reFirmName" prefHeight="20.0" prefWidth="232.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" />
+                        <TextField fx:id="developerName" layoutY="107.0" onKeyReleased="#reDeveloperName" prefHeight="20.0" prefWidth="232.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" />
+                        <TextField fx:id="developerFirmName" layoutY="133.0" onKeyReleased="#reDeveloperFirmName" prefHeight="20.0" prefWidth="232.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" />
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane layoutX="14.0" layoutY="21.0" AnchorPane.bottomAnchor="107.0" AnchorPane.leftAnchor="14.0" AnchorPane.topAnchor="21.0">
+                     <children>
+                        <Label text="Информация о фирме-заказчике" />
+                        <Label layoutX="3.0" layoutY="74.0" text="Должность начальника" />
+                        <Label layoutX="3.0" layoutY="22.0" text="Название фирмы-заказчика" />
+                        <Label layoutX="3.0" layoutY="48.0" text="ФИО начальника" />
+                        <Label layoutX="3.0" layoutY="155.0" text="Фирма ответственного разработчика " />
+                        <Label layoutX="3.0" layoutY="129.0" text="ФИО ответственного разработчика" />
+                        <Label layoutY="107.0" text="Информация о разработчиках" />
+                     </children>
+                  </AnchorPane>
+               </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+   </center>
+</BorderPane>
